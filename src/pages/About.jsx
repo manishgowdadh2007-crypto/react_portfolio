@@ -1,32 +1,23 @@
-import './AboutPages.css';
-import AboutSection from '../components/AboutSection/AboutSection';
-import GitHubStats from '../components/GitHubStats/GitHubStats';
-import SkillCard from '../components/SkillCard/SkillCard';
+import React from "react";
+import profileImg from "./public/image.jpg"; // Optional: standard import for bundlers like Vite/Webpack
 
-const SKILLS = [
-  { name: 'HTML5', level: 'Advanced', icon: '🌐' },
-  { name: 'CSS3', level: 'Advanced', icon: '🎨' },
-  { name: 'JavaScript', level: 'Advanced', icon: '⚡' },
-  { name: 'React', level: 'Intermediate', icon: '⚛️' }
-];
-
-function About() {
+export default function About() {
   return (
-    <div className='about-page container'>
-      <AboutSection />
-
-      <section id='skills' className='skills-section' style={{ marginTop: '40px' }}>
-        <h2>Skills</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
-          {SKILLS.map(s => <SkillCard key={s.name} name={s.name} level={s.level} icon={s.icon} />)}
+    <section id="about" className="about-section">
+      <h2>About Me</h2>
+      <div className="about-content">
+        <figure className="profile-figure">
+          <img
+            src={profileImg} /* or src="images/image.jpg" if in the public folder */
+            alt="Manish gowda D H profile photo"
+            width="500"
+          />
+          <figcaption>Manish gowda D H — Web Developer</figcaption>
+        </figure>
+        <div className="about-text">
+          <p>I'm a passionate web developer...</p>
         </div>
-      </section>
-
-      <section style={{ marginTop: '40px' }}>
-        <h2>GitHub Activity</h2>
-        <GitHubStats username='manishgowdadh2007-crypto' />
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }
-export default About;
