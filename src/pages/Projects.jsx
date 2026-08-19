@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { projectsData, categories } from '../data/projects';
+import { projectsData, categories } from '../components/data/projects';
 import ProjectGrid from '../components/ProjectGrid/ProjectGrid';
 
 function Projects() {
