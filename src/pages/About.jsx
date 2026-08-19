@@ -1,4 +1,4 @@
-import './AboutPage.css';
+import './AboutPages.css';
 import AboutSection from '../components/AboutSection/AboutSection';
 import GitHubStats from '../components/GitHubStats/GitHubStats';
 import SkillCard from '../components/SkillCard/SkillCard';
