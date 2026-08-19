@@ -17,7 +17,7 @@ function Navbar({ theme, toggleTheme }) {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/about" onClick={() => setIsMenuOpen(false)} className={({ isActive }) => isActive ? 'active' : ''}>
+                      <NavLink to="/About" onClick={() => setIsMenuOpen(false)} className={({ isActive }) => isActive ? 'active' : ''}>
                         About
                       </NavLink>
                     </li>
