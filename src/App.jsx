@@ -2,11 +2,11 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
+import Footer from './components/Footer/Footer'
 import Home from './pages/Home';
-import Skill from './pages/About';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import ProjectDetails from './pages/ProjectDetails';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 

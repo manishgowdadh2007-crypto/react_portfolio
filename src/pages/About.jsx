@@ -1,13 +1,11 @@
-import './AboutPages';
 import GitHubStats from '../components/GitHubStats/GitHubStats';
 import SkillCard from '../components/SkillCard/SkillCard';
 import AboutSection from '../components/AboutSection/AboutSection';
-import  SKILLS  from '../components/data/Skills'; 
+import {SKILLS} from '../components/data/projects';
 function About() {
   return (
     <div className='about-page container'>
       <AboutSection />
-
       <section id='SKILLS' className='skills-section' style={{ marginTop: '40px' }}>
         <h2>SKILLS</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
