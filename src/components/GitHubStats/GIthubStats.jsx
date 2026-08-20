@@ -14,7 +14,7 @@ function GitHubStats({ username }) {
             try {
                 setLoading(true);
                 // Talk to the GitHub API Waiter
-                const response = await fetch(`https://api.github.com/users/${manishgowdadh2007-crypto}`);
+                const response = await fetch(`https://api.github.com/users/${username}`);
                 
                 if (!response.ok) throw new Error('User not found');
                 
@@ -28,7 +28,7 @@ function GitHubStats({ username }) {
         }
 
         fetchStats();
-    }, [manishgowdadh2007-crypto]); // ONLY run this when the component loads, or if 'username' prop changes!
+    }, [username]); // ONLY run this when the component loads, or if 'username' prop changes!
 
     // 3. Conditional Rendering based on state
     if (loading) return <p>Loading GitHub stats...</p>;
@@ -40,7 +40,7 @@ function GitHubStats({ username }) {
         <div className="github-stats">
             <img src={stats.avatar_url} alt="GitHub Avatar" width="100" style={{borderRadius: '50%'}} />
             <div className="stats-info">
-                <h3>{stats.name || 'manishgowdadh2007-crypto'}</h3>
+                <h3>{stats.name || username}</h3>
                 <p>Public Repos: <strong>{stats.public_repos}</strong></p>
                 <p>Followers: <strong>{stats.followers}</strong></p>
             </div>
