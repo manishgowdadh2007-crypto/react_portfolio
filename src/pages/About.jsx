@@ -2,14 +2,7 @@ import './AboutPages.css';
 import GitHubStats from '../components/GitHubStats/GitHubStats';
 import SkillCard from '../components/SkillCard/SkillCard';
 import AboutSection from '../components/AboutSection/AboutSection';
-
-const SKILLS = [
-  { name: 'HTML5', level: 'Advanced', icon: '🌐' },
-  { name: 'CSS3', level: 'Advanced', icon: '🎨' },
-  { name: 'JavaScript', level: 'Advanced', icon: '⚡' },
-  { name: 'React', level: 'Intermediate', icon: '⚛️' }
-];
-
+import  SKILLS  from '../components/data/projects';
 function About() {
   return (
     <div className='about-page container'>
@@ -25,6 +18,9 @@ function About() {
       <section style={{ marginTop: '40px' }}>
         <h2>GitHub Activity</h2>
         <GitHubStats username='manishgowdadh2007-crypto' />
+        <a href="https://github.com/manishgowdadh/smart-study" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
       </section>
     </div>
   );
