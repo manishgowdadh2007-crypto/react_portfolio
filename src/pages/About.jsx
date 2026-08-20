@@ -2,7 +2,7 @@ import './AboutPages.css';
 import GitHubStats from '../components/GitHubStats/GitHubStats';
 import SkillCard from '../components/SkillCard/SkillCard';
 import AboutSection from '../components/AboutSection/AboutSection';
-import  SKILLS  from '../components/data/Skills.js';
+import  SKILLS  from '../components/data/Skills'; 
 function About() {
   return (
     <div className='about-page container'>
