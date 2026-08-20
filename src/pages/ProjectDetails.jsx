@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
-import { projectsData } from '../data/projects';
-import './components/ProjectDetails.css';
+import { projectsData } from '../components/data/projects';
+import './ProjectDetails.css';
 
 function ProjectDetails() {
   const { projectId } = useParams();

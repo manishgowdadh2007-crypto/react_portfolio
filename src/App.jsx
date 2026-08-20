@@ -39,6 +39,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/projects/:projectId" element={<ProjectDetails />} />
           </Routes>
         </main>
         <Footer />

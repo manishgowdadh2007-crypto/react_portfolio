@@ -3,29 +3,29 @@ export const categories = ['all', 'web', 'design'];
 export const projectsData = [
 {
 id: 1,
-title: 'Weather App',
-description: 'Real-time weather for any city',
-longDesc: 'A fully responsive weather application that shows current conditions and 5-day forecasts.',
+title: 'Study budy ai',
+description: 'smart ai that helps you study and learn more efficiently',
+longDesc: 'A smart AI that helps you study and learn more efficiently. It uses advanced algorithms to provide personalized study plans, track your progress, and offer interactive learning experiences.',
 tech: ['React', 'API'],
 category: 'web',
 featured: true,
-liveUrl: '#',
+liveUrl: 'https://creprdpv5n.zite.so',
 githubUrl: '#'
 },
 {
 id: 2,
 title: 'Portfolio Site',
-description: 'This very portfolio website',
+description: 'my personal portfolio website',
 longDesc: 'A multi-page React portfolio with routing, dark mode, and live GitHub stats.',
-tech: ['React', 'CSS'],
+tech: ['HTML', 'CSS', 'JavaScript'],
 category: 'web',
 featured: true,
-liveUrl: '#',
+liveUrl: 'http://127.0.0.1:5500/new_index.html',
 githubUrl: '#'
 },
 {
 id: 3,
-title: 'Todo Manager',
+title: '',
 description: 'Kanban task board',
 longDesc: 'A full-featured task manager with columns and drag-and-drop support.',
 tech: ['JavaScript', 'HTML'],

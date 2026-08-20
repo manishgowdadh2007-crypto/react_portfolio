@@ -170,7 +170,7 @@ body[data-theme="dark"] .skills-section {
 
 body[data-theme="dark"] .skill-item {
     background: #242424;
-    color: #ffffff;
+    color: #0c0707;
     border-color: #F18F01;
 }
 
@@ -185,9 +185,9 @@ body[data-theme="dark"] .github-stats {
 body[data-theme="dark"] .skill-card {
     background: #1f2937;
     border: 1px solid #374151;
-    color: #ffffff;
+    color: #0f0303;
 }
-body[data-theme="dark"] .skill-name { color: #ffffff; }
+body[data-theme="dark"] .skill-name { color: #030101; }
 body[data-theme="dark"] .skill-level { color: #F18F01; }
 
 /* Contact */
@@ -215,6 +215,11 @@ body[data-theme="dark"] label {
     color: #ffffff;
 }
 
+body[data-theme="dark"] .project-card {
+    background: #1f2937;
+    border: 1px solid #374151;
+    color: #ffffff;
+}
 
 /* Buttons */
 body[data-theme="dark"] .btn-primary {
