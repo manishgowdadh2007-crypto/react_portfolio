@@ -25,6 +25,12 @@
   border: 6px solid var(--accent);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
+.about-image img:hover {
+ transition: transform 0.5s ease, border 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  transform: scale(1.5); /* Slight zoom effect on hover */
+    border: 5px solid #e7c609; /* Change border color to gold on hover */
+    box-shadow: 0 10px 20px #807430;
+}
  
 .about-copy h1 {
   font-size: 2.75rem;
