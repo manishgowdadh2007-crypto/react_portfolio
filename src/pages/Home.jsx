@@ -2,7 +2,6 @@ import { projectsData } from '../components/data/projects';
 import ProjectCard from '../components/ProjectCard/ProjectCard';
 import Hero from '../components/Hero/Hero';
 import AboutSection from '../components/AboutSection/AboutSection';
-
 function Home() {
   const featured = projectsData.filter(p => p.featured);
 
