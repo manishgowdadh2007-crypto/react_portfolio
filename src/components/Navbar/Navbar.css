@@ -4,7 +4,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: var(--primary);
+  background:  #b39059;
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -40,13 +40,13 @@ transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-color: var(--accent);
+color: #6b4208;
 }
 
 .nav-links li a.active {
-color: var(--accent);
+color: #6b4208;
 font-weight: bold;
-border-bottom: 2px solid var(--accent);
+border-bottom: 2px solid #6b4208;
 }
 
 /* === MOBILE NAVIGATION === */

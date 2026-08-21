@@ -1,49 +1,58 @@
 /* src/components/SkillCard/SkillCard.css */
 
 .skill-card {
-background: var(--light);
-border: 2px solid var(--primary);
-border-radius: 12px;
-padding: 30px 20px;
-text-align: center;
-transition: transform 0.3s, box-shadow 0.3s;
+  background: #fdfdfc;
+  border: 1px solid #e7dfd5;
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 4px 20px -2px rgba(28, 25, 23, 0.05);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
 }
 
 .skill-card:hover {
-transform: translateY(-5px);
-box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transform: translateY(-6px);
+  border-color: #c5a880;
+  box-shadow: 0 16px 36px -4px rgba(184, 151, 107, 0.18);
 }
 
 .skill-icon {
-font-size: 2.5rem;
-display: block;
-margin-bottom: 0.5rem;
+  font-size: 2.25rem;
+  display: block;
+  margin-bottom: 0.75rem;
+  color: #a38258;
 }
 
 .skill-name {
-margin: 0 0 0.25rem;
-font-size: 1.2rem;
-font-weight: bold;
-color: var(--text);
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #292524; /* Refined charcoal black */
 }
 
 .skill-level {
-font-size: 0.9rem;
-color: var(--accent);
-margin: 0 0 1rem;
-font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8c7355; /* Muted bronze */
+  margin: 0 0 1.25rem;
+  font-weight: 500;
 }
 
 .skill-bar {
-background: #E5E7EB;
-border-radius: 9999px;
-height: 8px;
-width: 100%;
+  background: #f0ede8; /* Soft warm alabaster */
+  border-radius: 9999px;
+  height: 6px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .skill-fill {
-background: var(--primary);
-border-radius: 9999px;
-height: 100%;
-transition: width 1s ease-in-out;
+  background: linear-gradient(90deg, #c5a880 0%, #e0ceb5 100%); /* Subtle champagne gold gradient */
+  border-radius: 9999px;
+  height: 100%;
+  transition: width 1s ease-in-out;
 }
